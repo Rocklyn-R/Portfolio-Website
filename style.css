@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: blue;
+    color: #c897d8;
+}
+
+nav {
+    float: right;
+    background-color: #333159;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    right: 0;
+    color: #c897d8;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+}
+
+
+.navlinks li {
+    display: inline;
+    width: 80px;
+    margin-right: 50px;
+}
+
+a {
+    color: #c897d8;
+}
+
+
+.name-container {
+    height: 400px;
+    background-color: #c897d8;
+    color: #333159;
+    display: flex;
+    
+}
+
+.name-banner {
+    margin: auto;
+    background-color: pink;
+}
+
+h1.name {
+    font-size: 70px;
+}
+
