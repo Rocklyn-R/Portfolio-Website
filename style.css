@@ -1,49 +1,110 @@
 html {
     box-sizing: border-box;
     text-align: center;
-    background-color: blue;
+    background-color: white;
     color: #c897d8;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-    float: right;
     background-color: #333159;
-    display: inline-flex;
+    display: flex;
     justify-content: flex-end;
     width: 100%;
     right: 0;
     color: #c897d8;
     font-size: 18px;
-    position: fixed;
-    top: 0;
+    margin-top: 0;
+    font-family: Montserrat;
 }
 
 
 .navlinks li {
-    display: inline;
-    width: 80px;
-    margin-right: 50px;
+    display: inline-flex;
+    width: 70px;
+    margin-right: 40px;
 }
 
-a {
+.navlinks a {
     color: #c897d8;
+    text-decoration: none;
 }
 
 
 .name-container {
-    height: 400px;
+    height: 500px;
     background-color: #c897d8;
     color: #333159;
     display: flex;
-    
 }
 
 .name-banner {
     margin: auto;
-    background-color: pink;
 }
 
 h1.name {
-    font-size: 70px;
+    font-size: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+}
+
+h3.description {
+    margin-top: 0;
+    font-family: Montserrat;
+}
+
+.about-container {
+    height: 500px;
+    background-color: #3878e2;
+    padding-top: 10px;
+}
+.about-title {
+    font-size: 25px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.about-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-container img {
+    height: 350px;
+}
+
+.about-me {
+    font-family: Open Sans;
+    width: 600px;
+    height: fit-content;
+    font-size: 20px;
+}
+
+.projects-container {
+    height: 500px;
+    background-color: #aa4d84;
+    justify-content: center;
+    color: #333159;
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+.skills-container {
+    height: 500px;
+    background-color: #764d79;
+}
+
+.contact-container {
+    height: 500px;
+    background-color: #333159;
+    justify-content: center;
 }
 
