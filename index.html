@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
     </head>
     <body>
         <header class="nav" id="home">
@@ -27,7 +28,7 @@
         <!-------Section with Name-------->
             <div class="name-container">
                 <div class="name-banner">
-                    <h1 class="name">Antica Rocklyn</h1>
+                    <h1 class="dev-name">Antica Rocklyn</h1>
                     <h3 class="description">Front-End Web Developer</h3>
                 </div>
             </div>
@@ -38,7 +39,7 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="about-items">
-                    <div class="image-container">
+                    <div class="portrait-container">
                         <img src="portfolio-images/AnticaPic.jpeg">
                     </div>
                     <div class="about-me">
@@ -49,24 +50,71 @@
 
         <!--------Section with Projects-------->
             <div class="projects-container">
-                <div>
+                <div class="project-title">
                     <h2>Projects</h2>
+                </div>
+                <div class="box-container">
+                    <img src="portfolio-images/tea-cozy.png">
+                    <a href="Tea Cozy/index.html"><h3>Tea Cozy Website</h3></a>
+                    <p>(Flexbox Practice)</p>
                 </div>
             </div>
             <div class="skills-container">
-                <div>
                 <h2>Skills</h2>
-                    <img src="portfolio-images/HTML:CSS:JS.jpeg">
-                    <img src="portfolio-images/Git:github.png">
+                <div class="image-container">              
+                    <img src="portfolio-images/HTML.png" id="html">
+                    <img src="portfolio-images/CSS.png" id="css">
+                    <img src="portfolio-images/Javascript.png" id="js">
+                    <img src="portfolio-images/Git.png" id="git">
+                    <img src="portfolio-images/GitHub.png" id="github">
                 </div>
             </div>
 
 
         <!--------Section with Contact---------->
             <div class="contact-container">
-                <div>
+                <div class="contact-heading">
                     <h2>Contact</h2>
                 </div>
+                    <h3>Feel free to contact me:</h3>
+                <section>
+                    <div>
+                        <form accept-charset="UTF-8" action="https://www.formbackend.com/f/8b0f825e50423917" method="POST" id="myForm">
+                            <div class="form-group"> 
+                                <div class="contact-group">
+                                    <label for="name">Full Name:*</label>
+
+                                    <input type="text" name="contact" id="name" required>
+                                    
+                                    <label for="e-mail">E-mail Address:*</label> 
+                                                                  
+                                    <input type="text" name="e-mail" id="e-mail" required>
+                                        
+                                    <label for="phone-number">Phone Number:*</label>                                        
+                                        
+                                    <input type="text" name="phone-number" id="phone-number" required>
+                                  
+                                    <label for="reason">I would like to:*</label>
+                                    
+                                    <select id="reason" name="reason">
+                                        <option></option>
+                                        <option value="job-invite">Invite you to apply for a job</option>
+                                        <option value="hire-for-project">Hire you for a project</option>
+                                        <option value="services-inquiry">Find out more about your services</option>
+                                    </select>
+                                    <label for="message">Message*</label>
+                                    <textarea type="text" name="contact" id="message" required></textarea>
+                                    <input type="submit" value="Submit">                         
+                                </div>
+                            </div>                 
+                        </form>
+
+                           <!-------Javascript for Submit------->
+                               
+                    </div>
+                    
+                    
+                </section>
             </div>
         </main>
     </body>

@@ -46,7 +46,7 @@ nav {
     margin: auto;
 }
 
-h1.name {
+h1.dev-name {
     font-size: 60px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -59,9 +59,10 @@ h3.description {
     font-family: Montserrat;
 }
 
+
 .about-container {
     height: 500px;
-    background-color: #3878e2;
+    background-color: #333159;
     padding-top: 10px;
 }
 .about-title {
@@ -76,12 +77,12 @@ h3.description {
     justify-content: space-evenly;
 }
 
-.image-container img {
+.portrait-container img {
     height: 350px;
 }
 
 .about-me {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     width: 600px;
     height: fit-content;
     font-size: 20px;
@@ -89,22 +90,106 @@ h3.description {
 
 .projects-container {
     height: 500px;
-    background-color: #aa4d84;
+    background-color: #c897d8;
     justify-content: center;
     color: #333159;
     padding-top: 10px;
     font-family: Montserrat;
-    font-size: 25px;
 }
 
+.project-title {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+.box-container img {
+    height: 200px;
+}
+
+a:visited {
+    color: #333159;
+}
+
+a:hover {
+    font-size: 110%;
+}
 .skills-container {
-    height: 500px;
     background-color: #764d79;
+    padding-top: 10px;
+    font-family: "Open Sans";
+    font-size: 25px;
+    height: 500px;
+}
+
+.image-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-container img {
+    height: 200px;
 }
 
 .contact-container {
-    height: 500px;
+    height: 1000px;
+    padding-top: 10px;
     background-color: #333159;
+}
+
+.contact-heading {
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+.contact-container h3 {
+    font-family: "Open Sans";
+}
+
+form {
+    width: 100%;
+    display: flex;
     justify-content: center;
+}
+
+.form-group {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+.contact-group {
+  
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input[type=text], select, textarea {
+    padding: 8px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 16px;
+    font-family: "Open Sans";
+  }
+
+
+label {
+    font-family: "Open Sans";
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+#message {
+    height: 100px;
+
 }
 
