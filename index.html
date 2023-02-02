@@ -4,11 +4,12 @@
         <title>Rocklyn's Portfolio</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 <script defer src="script.js"></script>
     </head>
     <body>
@@ -16,25 +17,27 @@
             <nav class="navlinks">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="skills">Skills</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
 
         <!-------Section with Name-------->
-            <div class="name-container">
+            <div class="name-container" id="home">
                 <div class="name-banner">
-                    <h1 class="dev-name">Antica Rocklyn</h1>
+                    <div class="stretch-name">
+                        <h1 class="dev-name">Antica Rocklyn</h1>
+                    </div>
                     <h3 class="description">Front-End Web Developer</h3>
                 </div>
             </div>
         
         <!--------Section with About Me------->  
-            <div class="about-container">
+            <div class="about-container" id="about">
                 <div class="about-title">
                     <h2>About Me</h2>
                 </div>
@@ -49,17 +52,19 @@
             </div>
 
         <!--------Section with Projects-------->
-            <div class="projects-container">
+            <div class="projects-container" id="projects">
                 <div class="project-title">
                     <h2>Projects</h2>
                 </div>
                 <div class="box-container">
                     <img src="portfolio-images/tea-cozy.png">
-                    <a href="Tea Cozy/index.html"><h3>Tea Cozy Website</h3></a>
+                    <a class="tea-cozy" href="Tea Cozy/index.html"><h3>Tea Cozy Website</h3></a>
                     <p>(Flexbox Practice)</p>
                 </div>
             </div>
-            <div class="skills-container">
+
+        <!--------Section with Skills---------->
+            <div class="skills-container" id="skills">
                 <h2>Skills</h2>
                 <div class="image-container">              
                     <img src="portfolio-images/HTML.png" id="html">
@@ -72,23 +77,23 @@
 
 
         <!--------Section with Contact---------->
-            <div class="contact-container">
+            <div class="contact-container" id="contact">
                 <div class="contact-heading">
                     <h2>Contact</h2>
                 </div>
-                    <h3>Feel free to contact me:</h3>
+                    <h3 id="feel-free-msg">Feel free to contact me:</h3>
                 <section>
-                    <div>
+                    <div class="form-section">
                         <form accept-charset="UTF-8" action="https://www.formbackend.com/f/8b0f825e50423917" method="POST" id="myForm">
                             <div class="form-group"> 
                                 <div class="contact-group">
                                     <label for="name">Full Name:*</label>
 
-                                    <input type="text" name="contact" id="name" required>
+                                    <input type="text" name="name" id="name" minlength="3" maxlength="60" required>
                                     
                                     <label for="e-mail">E-mail Address:*</label> 
                                                                   
-                                    <input type="text" name="e-mail" id="e-mail" required>
+                                    <input type="text" name="e-mail" id="e-mail" minlength="5" maxlength="50" required>
                                         
                                     <label for="phone-number">Phone Number:*</label>                                        
                                         
@@ -103,12 +108,13 @@
                                         <option value="services-inquiry">Find out more about your services</option>
                                     </select>
                                     <label for="message">Message*</label>
-                                    <textarea type="text" name="contact" id="message" required></textarea>
-                                    <input type="submit" value="Submit">                         
+                                    <textarea type="text" name="message" id="message" minlength="5" maxlength="500" required></textarea>
+                                    <input type="submit" value="Submit" id="submit">  
+                                                          
                                 </div>
                             </div>                 
                         </form>
-
+                        <h3 id="thank-you-message">Thank you. Your message has been received!</h3> 
                            <!-------Javascript for Submit------->
                                
                     </div>
