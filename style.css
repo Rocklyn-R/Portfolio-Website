@@ -3,7 +3,9 @@ html {
     text-align: center;
     background-color: white;
     color: #c897d8;
-    scroll-padding-top: 50px;
+    font-size: 16px;
+    scroll-padding-top: 3.1rem;
+    
 }
 
 body {
@@ -15,20 +17,22 @@ nav {
     background-color: #333159;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    min-width: 100%;
     right: 0;
     margin-top: 0;
     color: #c897d8;
-    font-size: 18px;
-    font-family: Montserrat;
+    font-size: 1.1rem;
+    font-family: "Open Sans";
     position: fixed; /* Set the navbar to fixed position */
     top: 0;
+    z-index: 2;
+    overflow: hidden;
 }
 
 
 .navlinks li {
     display: inline-flex;
-    margin-right: 60px;
+    padding-right: 3.75rem;
 }
 
 .navlinks a {
@@ -38,12 +42,12 @@ nav {
 
 .navlinks a:hover {
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
 }
 
 .name-container {
-    height: 500px;
-    width: 100%;
+    min-height: 31rem;
+    max-width: 100%;
     background-color: #c897d8;
     color: #333159;
     display: flex;
@@ -61,11 +65,11 @@ nav {
 }
 
 h1.dev-name {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-bottom: 0;
     padding-bottom: 0;
-    font-family: Montserrat;
-    letter-spacing: 5px;
+    font-family: "Open Sans";
+    letter-spacing: 0.3rem;
 }
 
 .dev-name {
@@ -89,11 +93,11 @@ h1.dev-name {
     }
     20%
     {
-        transform: translatex(-20px);
+        transform: translatex(-1.25rem);
     }
     40%
     {
-        transform: translatex(20px);
+        transform: translatex(1.25rem);
     }
     
     100%
@@ -106,19 +110,20 @@ h1.dev-name {
 
 h3.description {
     margin-top: 0;
-    font-family: Montserrat;
+    font-family: "Open Sans";
 }
 
 
 .about-container {
-    height: 500px;
+    min-height: 31rem;
+    max-width: 100%;
     background-color: #333159;
-    padding-top: 10px;
+    padding-top: 1.25rem;
 }
 .about-title {
-    font-size: 25px;
+    font-size: 1.6rem;
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Open Sans";
 }
 
 .about-items {
@@ -128,33 +133,36 @@ h3.description {
 }
 
 .portrait-container img {
-    height: 350px;
+    max-height: 21.8rem;
+    max-width: 100%;
 }
 
 .about-me {
     font-family: "Open Sans";
-    width: 600px;
-    height: fit-content;
-    font-size: 20px;
+    width: 37.5rem;
+    min-height: fit-content;
+    font-size: 1.25rem;
 }
 
 .projects-container {
-    height: 500px;
+    min-height: 31rem;
+    max-width: 100%;
     background-color: #c897d8;
     justify-content: center;
     color: #333159;
-    padding-top: 10px;
-    font-family: Montserrat;
+    padding-top: 1.25rem;
+    font-family: "Open Sans";
 }
 
 .project-title {
-    font-size: 25px;
-    padding-bottom: 20px;
+    font-size: 1.6rem;
+    padding-bottom: 1.25rem;
 }
 
 
 .box-container img {
-    height: 200px;
+    max-height: 12.5rem;
+    max-width: 100%;
 }
 
 a.tea-cozy:visited {
@@ -164,16 +172,17 @@ a.tea-cozy:visited {
 a.tea-cozy:hover {
     font-size: 110%;
 }
+
 .skills-container {
     background-color: #764d79;
-    padding-top: 10px;
+    padding-top: 1.25rem;
     font-family: "Open Sans";
-    font-size: 25px;
-    max-height: 1000px;
+    font-size: 1.6rem;
+    min-height: 32rem;
 }
 
 .image-container {
-    height: 300px;
+    min-height: 18.75rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -182,20 +191,20 @@ a.tea-cozy:hover {
 }
 
 .image-container img {
-    max-height: 200px;
+    max-height: 12.5rem;
     width: auto;
     height: auto;
 }
 
 .contact-container {
-    height: 750px;
-    padding-top: 10px;
+    height: 46.8rem;
+    padding-top: 1.25rem;
     background-color: #333159;
 }
 
 .contact-heading {
-    font-family: Montserrat;
-    font-size: 25px;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
 }
 
 .contact-container h3 {
@@ -209,59 +218,150 @@ form {
 }
 
 .form-group {
-    width: 900px;
+    max-width: 56rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 1.8rem;
 }
 
 
 .contact-group {
-  
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: calc(375px / var(--size-divisor));
 }
 
 input[type=text], select, textarea {
-    padding: 8px 15px;
-    margin: 8px 0;
+    padding: 0.5rem 1 rem;
+    margin: 0.5rem 0;
     box-sizing: border-box;
-    width: 100%; 
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Open Sans";
+    
   }
 
 
 label {
     font-family: "Open Sans";
     display: inline-block;
-    width: 150px;
+    width: 9.3rem;
     text-align: left;
 }
 
 #message {
-    height: 100px;
+    height: 6.25rem;
 }
 
 input[type=submit] {
-    width: 100px;
-    height: 46px;
+    width: 6.25rem;
+    height: 2.8rem;
     background-color: #c897d8;
     color: #333159;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     align-self: center;
-    border: 2px solid #764d79;
-    border-radius: 40px;
+    border: .06rem solid #764d79;
+    border-radius: 2.5rem;
 }
 
 .form-section h3 {
    display: none;
-   margin-top: 350px;
+   margin-top: 21.8rem;
 }
 
+ul {
+    padding-inline-start: 50px;
+}
+
+ 
+@media (min-width: 540px) {
+    .contact-group {
+      --size-divisor: 1.2;
+    }
+
+    .navlinks li {
+        padding-right: 5rem;
+    }
+
+  }
+  @media (min-width: 768px) {
+    .contact-group {
+      --size-divisor: .7;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .contact-group {
+        --size-divisor: .6;
+    }
+
+  }
+
+  @media (min-width: 992px) { 
+    .contact-group {
+      --size-divisor: 1;
+    }
+  }
+  @media (min-width: 1200px) { 
+    .contact-group {
+      --size-divisor: .67;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 412px) {
+    .navlinks li {
+        padding-right: 2.8rem;
+    }
+  }
+
+ @media only screen and (max-width: 365px) {
+    .navlinks li {
+     padding-right: 2rem;
+    }
+
+    .navlinks {
+        padding-right: 0.8rem;
+    }
+  }
+
+ @media only screen and (max-width: 285px) {
+    html {
+        scroll-padding-top: 12rem;;
+    }
+    .navlinks li {
+        padding-right: 0.9rem;
+    }
+
+    .name-container {
+      padding-top: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about-items {
+      flex-wrap: wrap;
+    }
+
+    .image-container img {
+        max-height: 8rem;
+    }
+
+    .navlinks li {
+       
+    }
+
+    .name-container {
+        padding-top: 3rem;
+    }
+
+    .about-me {
+        margin: 0 1.2rem;
+    }
+  }
 
