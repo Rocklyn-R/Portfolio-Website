@@ -11,21 +11,25 @@
 <script defer src="script.js"></script>
     </head>
     <body>
+        <div id="tog">
         <header class="nav" id="home">
-            <nav class="navlinks">
+            <nav class="navlinks" id="nav">
                 <ul class="navlist">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home-nav">Home</a></li>
+                    <li id="about"><a href="#about-nav">About</a></li>
+                    <li id="projects"><a href="#projects-nav">Projects</a></li>
+                    <li id="skills"><a href="#skills-nav">Skills</a></li>
+                    <li id="contact"><a href="#contact-nav">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
 
         <!-------Section with Name-------->
-            <div class="name-container" id="home">
+            <div class="name-container" id="home-nav">
+                <div class="toggle-button" id="toggle">
+                    <input type="checkbox" name="">
+                </div>
                 <div class="name-banner">
                     <div class="stretch-name">
                         <h1 class="dev-name">Antica Rocklyn</h1>
@@ -35,9 +39,9 @@
             </div>
         
         <!--------Section with About Me------->  
-            <div class="about-container" id="about">
+            <div class="about-container" id="about-nav">
                 <div class="about-title">
-                    <h2>About Me</h2>
+                    <h2 id="about-anim">About Me</h2>
                 </div>
                 <div class="about-items">
                     <div class="portrait-container">
@@ -50,20 +54,20 @@
             </div>
 
         <!--------Section with Projects-------->
-            <div class="projects-container" id="projects">
+            <div class="projects-container" id="projects-nav">
                 <div class="project-title">
-                    <h2>Projects</h2>
+                    <h2 id="projects-anim">Projects</h2>
                 </div>
                 <div class="box-container">
                     <img src="portfolio-images/tea-cozy.png">
-                    <a class="tea-cozy" href="Tea Cozy/index.html"><h3>Tea Cozy Website</h3></a>
+                    <a class="tea-cozy" href="Tea Cozy/index.html" target="_blank"><h3>Tea Cozy Website</h3></a>
                     <p>(Flexbox Practice)</p>
                 </div>
             </div>
 
         <!--------Section with Skills---------->
-            <div class="skills-container" id="skills">
-                <h2>Skills</h2>
+            <div class="skills-container" id="skills-nav">
+                <h2 id="skills-anim">Skills</h2>
                 <div class="image-container">              
                     <img src="portfolio-images/HTML.png" id="html">
                     <img src="portfolio-images/CSS.png" id="css">
@@ -75,9 +79,9 @@
 
 
         <!--------Section with Contact---------->
-            <div class="contact-container" id="contact">
+            <div class="contact-container" id="contact-nav">
                 <div class="contact-heading">
-                    <h2>Contact</h2>
+                    <h2 id="contact-anim">Contact</h2>
                 </div>
                     <h3 id="feel-free-msg">Feel free to contact me:</h3>
                 <section>
@@ -121,6 +125,7 @@
                 </section>
             </div>
         </main>
+        </div>
     </body>
 </html>
 
