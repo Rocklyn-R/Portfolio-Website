@@ -67,4 +67,5 @@ toggle.onclick = function() {
     projects.classList.toggle('active');
     skills.classList.toggle('active');
     contact.classList.toggle('active');
-}
+};
+
