@@ -1,0 +1,133 @@
+html {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica;
+    text-align: center;
+    scroll-padding-top: 69px;
+  }
+
+  html, body {
+    margin: 0;
+  }
+  
+  nav {
+    box-sizing: border-box;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    opacity: 0.9;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  
+  .logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    opacity: 0.9;
+    z-index: 2;
+    position: fixed;
+  }
+  
+.nav-bar-spacing {
+    padding-top: 69px;
+}
+
+  
+  .navlinks li {
+    margin-left: 15px;
+    display: inline-flex;
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+  
+  a {
+    color: seashell;
+    opacity: 0.9;
+  }
+
+  .mission-container {
+    height: 700px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    display: flex;
+    padding-top: 70px;
+  }
+  
+  .banner {
+    margin: auto;
+    width: 1200px;
+    background-color: black;
+
+  }
+  
+  
+  .tea-banner {
+    margin-top: 70px;
+  }
+  
+  .tea-container {
+    display: inline-flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tea-trend img {
+    height: 200px;
+    width: 300px;
+    padding: 10px 10px;
+  }
+  
+  .location-container {
+    height: 500px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 1200px;
+  }
+  
+  .l-title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 70px;
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 110px;
+  }
+  
+  .box {
+    width: 300px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.9;
+    padding-top: 10px;
+    position: static;
+    z-index: 0.2;
+  }
+  
+  .box p {
+    font-size: auto;
+  }
+  
+  .footer-banner {
+    height: 200px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+  
+  .copyright {
+    text-align: left;
+    margin-left: 20px;
+  }
