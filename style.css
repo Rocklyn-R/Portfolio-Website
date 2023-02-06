@@ -373,6 +373,7 @@ ul {
 
 .active .tea-cozy h3 {
     color: #c897d8;
+    border-bottom: 1px solid #c897d8;
 }
 
 .active .box-container img {
