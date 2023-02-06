@@ -213,18 +213,34 @@ h3.description {
     padding-bottom: 1.25rem;
 }
 
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .box-container img {
     max-height: 12.5rem;
-    max-width: 100%;
 }
 
-.tea-cozy h3, a.tea-cozy:visited {
+
+.tea-cozy h3 {
     color: #333159;
+    border-bottom: 1px solid #333159;
+    width: fit-content;
+    margin-bottom: 0.5rem;
 }
 
 a.tea-cozy:hover {
     font-size: 110%;
+}
+
+a.tea-cozy {
+    text-decoration: none;
+}
+
+.box-container p {
+    margin-top: 0;
 }
 
 .skills-container {
@@ -352,6 +368,10 @@ ul {
 }
 
 .active a:visited {
+    color: #c897d8;
+}
+
+.active .tea-cozy h3 {
     color: #c897d8;
 }
 
