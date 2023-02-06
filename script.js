@@ -3,11 +3,11 @@ let thankYouMessage = document.getElementById('thank-you-message');
 let form = document.getElementById('myForm');
 let feelFree = document.getElementById('feel-free-msg')
 
-/*const form2 = document.querySelector('form')
+const form2 = document.querySelector('form')
 form2.onsubmit = (e) => {
   e.preventDefault()
-  console.log('submitted')
-}*/
+  console.log('submitted');
+}
 
 function submitMessage() {
     thankYouMessage.style.display = 'block';
