@@ -219,11 +219,7 @@ h3.description {
     max-width: 100%;
 }
 
-a.tea-cozy {
-    color: #333159;
-}
-
-a.tea-cozy:visited {
+.tea-cozy h3, a.tea-cozy:visited {
     color: #333159;
 }
 
